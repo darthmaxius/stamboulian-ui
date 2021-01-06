@@ -6,32 +6,32 @@ class ConfigureSpacesService {
         "name": "Centro3",
         "address": "Alvarado 220",
         "phone_number": "123412344",
-        "servicies": [
+        "services": [
           {
-            "_id": "5feb8590a4ddc6186c84a796",
+            "id": "5feb8590a4ddc6186c84a796",
             "is_enabled": true,
             "name": "Consultorio",
             "subservices": [
               {
-                "_id": "5feb2ec29960d92f8836b897",
+                "id": "5feb2ec29960d92f8836b897",
                 "is_high_demand": true,
                 "name": "Vacuna Covid",
                 "range_size": 30
               },
               {
-                "_id": "5feb308da512ca25a44cbeb0",
+                "id": "5feb308da512ca25a44cbeb0",
                 "is_high_demand": true,
                 "name": "Vacuna Gripe A",
                 "range_size": 30
               }]
           },
           {
-            "_id": "5feb859aa4ddc6186c84a798",
+            "id": "5feb859aa4ddc6186c84a798",
             "is_enabled": true,
             "name": "Vacunacion",
             "subservices": [
               {
-                "_id": "5feb30c39b7d682fecef6115",
+                "id": "5feb30c39b7d682fecef6115",
                 "is_high_demand": true,
                 "name": "Vacuna SIDA",
                 "range_size": 30

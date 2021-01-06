@@ -12,8 +12,12 @@ const useStylesSelectConfigureSpaces = makeStyles((theme) => ({
   }
 }));
 
-export default function Select({ title, items, labelField, valueField }) {
+export default function Select({ title, items, labelField, valueField, selected, onChange }) {
   const classes = useStylesSelectConfigureSpaces();
+
+  const handleChange = (event) => {
+    onChange(event.target.value);
+  };
 
   useEffect(() => {
 
@@ -26,11 +30,10 @@ export default function Select({ title, items, labelField, valueField }) {
         <SelectMaterial
           labelId="simple-select-label"
           id="simple-select"
-          value={10}
-          onChange={() => null}
+          value={selected}
+          onChange={handleChange}
         >
           {items.map((item, key) => {
-            console.log(item)
             return <MenuItem key={key} value={item[valueField]}> {item[labelField]}</MenuItem>
           })}
         </SelectMaterial>
